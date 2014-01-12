@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookmarklet</title>
+</head>
+<body>
+
+<h1>Click to copy</h1>
+
+<code>javascript:(function(){var e=location.host,t=e.split(".");if(t[0].length!==3&&t[0].toLowerCase()!=="www"){var n=document.createElement("script");n.setAttribute("type","text/javascript");n.setAttribute("src","/internal/bin/qascripts/overlay/lib/jquery-2.0.3.js");var r=document.createElement("script");r.setAttribute("type","text/javascript");r.setAttribute("src","/internal/bin/qascripts/overlay/lib/jquery.xeoOverlay.js");var i=document.getElementsByTagName("*"),s=i[i.length-1].parentNode;s.appendChild(n);setTimeout(function(){s.appendChild(r)},200)}})();</code>
+
+</body>
+</html>
